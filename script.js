@@ -30,15 +30,6 @@ document.getElementById("btn").onclick=function(){
 	.then((result)=>{
 	return new Promise((resolve)=>{
 		setTimeout(()=>{
-			const newResult=result*2;
-			output.innerText='Result: ${newResult}';
-			resolve(newResult);
-		},2000);
-	});
-	})
-	.then((result)=>{
-	return new Promise((resolve)=>{
-		setTimeout(()=>{
 			const newResult=result-3;
 			output.innerText='Result: ${newResult}';
 			resolve(newResult);
